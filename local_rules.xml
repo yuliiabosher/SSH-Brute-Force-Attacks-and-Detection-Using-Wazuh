@@ -17,3 +17,18 @@
   </rule>
 
 </group>
+
+<group name="ssh_auth_failure,">
+
+  <rule id="100101" level="9">
+    <if_sid>5760,40111,2501,5758</if_sid>
+    <description>Multiple ssh authentication failures</description>
+  </rule>
+  <rule id="100100" level="10" frequency="20" timeframe="60">
+    <if_matched_sid>100101</if_matched_sid>
+    <same_srcip />
+    <description>Multiple ssh authentication failures from the same IP</description>
+    <options>no_full_log</options>
+  </rule>
+
+</group>
