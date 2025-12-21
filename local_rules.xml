@@ -46,3 +46,15 @@
   </rule>
 
 </group>
+
+<group name="ssh_auth_failure,">
+
+  <rule id="100104" level="13" frequency="10" timeframe="60">
+    <if_sid>5715</if_sid>   
+    <if_matched_sid>100101</if_matched_sid>
+    <same_srcip />
+    <description>Successful login after multiple ssh authentication failures from the same IP</description>
+  </rule>
+
+</group>
+
