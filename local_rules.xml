@@ -58,3 +58,12 @@
 
 </group>
 
+<group name="ssh_auth_failure,">
+
+  <rule id="100105" level="14" frequency="10" timeframe="60">
+    <if_sid>5715</if_sid>
+    <if_matched_sid>100102</if_matched_sid>
+    <description>Successful root logn after multiple ssh authentication failures for root from same IP</description>
+  </rule>
+
+</group>
