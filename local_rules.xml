@@ -67,3 +67,14 @@
   </rule>
 
 </group>
+
+<group name="ssh_auth_failure,">
+
+  <rule id="100106" level="9">
+    <if_sid>5715</if_sid>
+    <match>Accepted key</match>
+    <description>Successful ssh key-based authentication</description>
+  </rule>
+
+</group>
+    
