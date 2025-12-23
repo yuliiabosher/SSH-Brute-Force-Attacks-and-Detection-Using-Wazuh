@@ -68,7 +68,7 @@
 
 </group>
 
-<group name="ssh_auth_failure,">
+<group name="ssh_auth_success,">
 
   <rule id="100106" level="9">
     <if_sid>5715</if_sid>
